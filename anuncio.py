@@ -57,5 +57,15 @@ class Display(Anuncio):
 
     def redimensionar_anuncio(self):
         print(f"Redimensionamiento de anuncio Social {self.sub_tipo}")
+
+class Social(Anuncio):
+    FORMATO = "Social"
+    SUB_TIPOS = ("facebook", "linkedin")
+
+    def comprimir_anuncio(self):
+        print(f"Compresión de anuncio Social {self.sub_tipo}")
+
+    def redimensionar_anuncio(self):
+        print(f"Redimensionamiento de anuncio Social {self.sub_tipo}")
     
     
